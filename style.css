@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    perspective: 800px;
+    
+}
+
+.form-container {
+    margin-top: 50px;
+    position: relative;
+    width: 700px;
+    min-height: 700px;
+    max-height: fit-content;
+    transform-style: preserve-3d;
+    transition: 500ms ease-in-out;
+    transform: translateZ(-75px);
+}
+
+.form-container-hover {
+    transform: rotateY(-90deg) translateX(-400px) translateZ(350px);
+}
+
+.form {
+    border: 10px solid #069;
+    padding: 30px 50px;
+    width: 700px;
+    min-height: 780px;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-form {
+    z-index: 1;
+}
+
+.signup-form {
+    z-index: -1;
+    transform: rotateY(90deg) translateZ(350px) translateX(350px);
+    
+}
+
+.form-label {
+    text-align: center;
+    font-weight: normal;
+    font-size: 3em;
+    color: #069;
+}
+
+label {
+    display:block;
+}
+
+.form > div {
+    margin-bottom: 50px;
+}
+
+.form input {
+    font-size: 1.5em;
+    border: 5px solid #069;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+}
+
+.form .subtitle {
+    text-align: center;
+    font-weight: normal;
+}
+
+.subtitle em {
+    transform-origin: center;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.subtitle em::after {
+    display: inline-block;
+    content: "";
+    background-color: #069;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(1px + 100%);
+    transform: scaleX(0);
+    transition: 200ms ease-in-out;
+    transform-origin: center;
+}
+
+.subtitle em:hover {
+    color: #069;
+}
+
+.subtitle em:hover::after {
+    transform: scale(1);
+
+}
+
+.btn {
+    align-self: center;
+    min-width: 200px;
+    max-width: fit-content;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: white;
+    background: #069;
+    border: 5px solid #069;
+    transition: .1s;
+}
+
+.btn:hover {
+    background-color: initial;
+    color: #069;
+}
+
+
+
+
