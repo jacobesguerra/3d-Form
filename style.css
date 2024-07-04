@@ -120,14 +120,14 @@ label {
     font-size: 1.2em;
     padding: 10px 30px;
     cursor: pointer;
-    color: white;
+    color:  #069;
     border: 5px solid #069;
     transition: .1s;
 }
 
 .btn:hover {
     background: #069;
-    color: #069;
+    color: white;
 }
 
 
