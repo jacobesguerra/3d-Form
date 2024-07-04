@@ -121,13 +121,12 @@ label {
     padding: 10px 30px;
     cursor: pointer;
     color: white;
-    background: #069;
     border: 5px solid #069;
     transition: .1s;
 }
 
 .btn:hover {
-    background-color: initial;
+    background: #069;
     color: #069;
 }
 
