@@ -120,6 +120,7 @@ label {
     font-size: 1.2em;
     padding: 10px 30px;
     cursor: pointer;
+    background-color:white;
     color:  #069;
     border: 5px solid #069;
     transition: .1s;
